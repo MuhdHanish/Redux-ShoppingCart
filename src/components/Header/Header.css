@@ -12,3 +12,18 @@ header .container{
 .icon-container {
  transform: skewX(-10deg);
 }
+
+.cart-count-header{
+ width: 20px;
+ height: 20px;
+ border-radius: 50%;
+ background-color: #ff398f;
+ color: white;
+ font-size: 13px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: absolute;
+ top: -10px;
+ right: -10px;
+}
