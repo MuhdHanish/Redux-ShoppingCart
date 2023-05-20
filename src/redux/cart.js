@@ -1,7 +1,15 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import axios from "axios";
+
+export const fetchUser = createAsyncThunk('cart/fetchUser',async(id)=>{
+  const response = await axios.get(`https://jsonplaceholder.typicode.com/todos/${id}`)
+  console.log(response.data)
+   return response.data
+})
 
 const INITIAL_STATE = {
-   cartList: []
+   cartList: [],
+   userDetail:[]
 }
 
 const cartSlice = createSlice({
@@ -37,6 +45,14 @@ const cartSlice = createSlice({
                item.count--
          })
       }
+   },
+   extraReducers:{
+      [fetchUser.pendig]:(state,action)=>{},
+      [fetchUser.fulfilled]:(state,action)=>{
+         state.userDetail.push(action.payload)
+         console.log('success')
+      },
+      [fetchUser.rejected]:(state,action)=>{}
    }
 })
 
