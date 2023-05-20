@@ -9,7 +9,9 @@ const Header = () => {
     <header>
       <div className="container">
         <h1>Shopping Cart</h1>
-        <FontAwesomeIcon icon={faCartShopping}  size='2xl' />
+        <div className="icon-container">
+          <FontAwesomeIcon icon={faCartShopping} size="2x"/>
+        </div>
       </div>
     </header>
   );

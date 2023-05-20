@@ -8,3 +8,7 @@ header .container{
  justify-content: space-between;
  align-items: center;
 }
+
+.icon-container {
+ transform: skewX(-10deg);
+}
