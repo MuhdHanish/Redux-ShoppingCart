@@ -4,9 +4,9 @@ import "./CartButtons.css"
 const AfterCart = () => {
   return (
     <div className="after-cart">
-     <button className="cart-count-button">-</button>
-     <div className="cart-counter">1</div>
-     <button className="cart-count-button">+</button>
+     <button className="cart-counter-button">-</button>
+     <div className="cart-count">1</div>
+     <button className="cart-counter-button">+</button>
     </div>
   )
 }

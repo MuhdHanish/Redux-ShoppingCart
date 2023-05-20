@@ -4,7 +4,9 @@ import products from '../../api/products.json'
 import BeforeCart from './CartButtons/BeforeCart'
 import AfterCart from './CartButtons/AfterCart'
 
+
 const ProductList = () => {
+  
   return (
     <section className='container'>
      {
