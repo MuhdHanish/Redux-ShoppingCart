@@ -9,7 +9,7 @@ const Header = () => {
     <header>
       <div className="container">
         <h1>Shopping Cart</h1>
-        <FontAwesomeIcon icon={faCartShopping} shake size='2xl' />
+        <FontAwesomeIcon icon={faCartShopping}  size='2xl' />
       </div>
     </header>
   );

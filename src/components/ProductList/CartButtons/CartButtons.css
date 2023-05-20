@@ -3,8 +3,8 @@
  position:relative;
  align-items: center;
  justify-content: center;
- top: 50px;
- margin: 10px 0;
+ top: 52px;
+ margin: 16px 0;
  transition: all 0.3s ease-in-out;
 }
 
@@ -27,13 +27,14 @@
 .add-cart-button{
  color: whitesmoke;
  background-color: rgb(255, 57, 143);
- margin: 18px 0;
+ margin: 15px 0;
  padding: 10px 15px;
  position: relative;
  border: none;
- top:50px;
+ top:55px;
  border-radius: 4.5px;
  cursor: pointer;
+ font-family: 'Kanit', sans-serif;
  transition: all 0.3s ease-in-out;
 }
 

@@ -14,12 +14,12 @@ section{
  margin-top: 100px;
  background-color: #27293d;
  position: relative;
+ display: flex;
  flex-direction: column;
  align-items: center;
  text-align: center;
  border-radius: 8px;
  overflow: hidden;
- font-family: 'Ubuntu', sans-serif;
 }
 
 .product-container::before{
@@ -74,3 +74,19 @@ section{
  transform: translateY(-20px) scale(0.9);
 }
 
+.product-container h3 {
+ color: white;
+ font-weight: normal;
+ font-size: 16px;
+ position: relative;
+ transition: var(--transition);
+ top: 0;
+}
+
+.product-container.active h3,
+.product-container:hover h3 {
+ color: whitesmoke;
+ font-weight: normal;
+ font-size: 16px;
+ top: -25px;
+}
